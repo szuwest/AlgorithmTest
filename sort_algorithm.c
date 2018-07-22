@@ -1,5 +1,6 @@
 #include "sort_algorithm.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 void _mergeSort(int a[], int b[], int n, int step) {
     int start1 = 0;
@@ -210,4 +211,29 @@ void quickSort(int a[], int n) {
     if (a == 0 || n == 0) return;
     // _quickSort(a, 0, n-1);
     quickSort2(a, 0, n-1);
+}
+
+
+void testSort() {
+    int a[] = {2,5,59,32,12,8,32,15,44,82,19,13};
+    int len = 12;
+    printf("before sort:\n");
+    for (int i=0;i<len;i++) {
+        printf("%d ", a[i]);
+    }
+    printf("\nafter sort:\n");
+    
+    // heapSort(a, len);
+    quickSort(a, len);
+    // mergeSort(a,len);
+    // recursive_mergeSort(a, len);
+    // iteractive_mergeSort(a, len);
+    // recursive_merge_sort(a, len);
+    // iteractive_merge_sort(a, len);
+    // iteractive_merge_sort2(a, len);
+
+    for (int i=0;i<len;i++) {
+        printf("%d ", a[i]);
+    }
+    printf("\n");
 }

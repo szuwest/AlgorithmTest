@@ -16,6 +16,8 @@ void previewBiTree(PBiNode tree);
 void suffixViewBiTree(PBiNode tree);
 void middleViewBiTree(PBiNode tree);
 
+void testAVLTree();
+
 #ifdef __cplusplus
 }
 #endif

@@ -11,6 +11,8 @@ void recursive_mergeSort(int a[], int n);
 void iteractive_mergeSort(int a[], int n);
 void quickSort(int a[], int n);
 
+void testSort();
+
 #ifdef __cplusplus
 }
 #endif 
